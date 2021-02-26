@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BILBOT-UI", "BILBOT-UI.csproj", "{2F4C8ED5-F8EE-4948-AB01-B99085D95BBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F4C8ED5-F8EE-4948-AB01-B99085D95BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F4C8ED5-F8EE-4948-AB01-B99085D95BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F4C8ED5-F8EE-4948-AB01-B99085D95BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F4C8ED5-F8EE-4948-AB01-B99085D95BBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D357A1A8-7AFF-49DB-91CA-8DD4DCF81E9E}
+	EndGlobalSection
+EndGlobal

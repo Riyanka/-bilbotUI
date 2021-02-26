@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BILBOT</title>
+    <!---animate css--->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" />
+
+    <!--bootstrap css-->
+    <link href="bootstrap/CSS/bootstrap.min.css" rel="stylesheet" />
+
+    <!--Jquery-->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <!--Popper and Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <style>
+        .bubble {
+            position: relative;
+            width: 250px;
+            height: 195px;
+            padding: 0px;
+            background: #9adee7;
+            -webkit-border-radius: 38px;
+            -moz-border-radius: 38px;
+            border-radius: 38px;
+        }
+
+            .bubble:after {
+                content: '';
+                position: absolute;
+                border-style: solid;
+                border-width: 20px 0 20px 39px;
+                border-color: transparent #9adee7;
+                display: block;
+                width: 0;
+                z-index: 1;
+                margin-top: -20px;
+                right: -39px;
+                top: 66%;
+            }
+
+
+        .bubbleRight {
+            position: relative;
+            width: 250px;
+            height: 200px;
+            padding: 0px;
+            background: #9adee7;
+            -webkit-border-radius: 38px;
+            -moz-border-radius: 38px;
+            border-radius: 38px;
+        }
+
+            .bubbleRight:after {
+                content: '';
+                position: absolute;
+                border-style: solid;
+                border-width: 20px 46px 20px 0;
+                border-color: transparent #9adee7;
+                display: block;
+                width: 0;
+                z-index: 1;
+                margin-top: -20px;
+                left: -46px;
+                top: 73%;
+            }
+    </style>
+
+
+    <script>
+
+        function checkPurpose(purpose) {
+
+            document.getElementById("whichpurpose").value = purpose;
+
+            var x = document.getElementById("purposeSelected");
+            x.style.display = "block";
+            var showQ2 = document.getElementById("q2");
+            showQ2.style.display = "block";
+
+        }
+
+        function checkFuel(fuel) {
+
+            document.getElementById("whichfuel").value = fuel;
+
+            var x = document.getElementById("fuelSelected");
+            x.style.display = "block";
+
+            var showQ3 = document.getElementById("q3");
+            showQ3.style.display = "block";
+            document.getElementById("TextBox1").Text = "bala";
+
+        }
+
+        function checkStyle(style1) {
+            document.getElementById("whichstyle").value = style1;
+            var x = document.getElementById("styleSelected");
+            x.style.display = "block";
+            var showQ4 = document.getElementById("q4");
+            showQ4.style.display = "block";
+        }
+
+
+
+        function checkSize(size) {
+            document.getElementById("whichsize").value = size;
+            var x = document.getElementById("sizeSelected");
+            x.style.display = "block";
+            var y = document.getElementById("belowPanel");
+            y.style.display = "block";
+        }
+
+        function passValue() {
+            var z = document.getElementById("whichfuel").value;
+            document.getElementById("TextBox1").value = z;
+        }
+
+    </script>
+
+
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div>
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/logobb.png" width="40" height="40" />
+                    BilBot
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="AboutUsUI.html">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Terms</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
+
+        </div>
+        <!-- Main Content Placeholder -->
+        <div class="jumbotron">
+            <h1 class="display-3">Hello!</h1>
+            <p class="lead">This is a simple web application, featuring a bot that assists us to buy a decent car.</p>
+            <hr class="my-2">
+            <p>Author: Riyanka Bakshi</p>
+            <p>Email: bakshiriyanka@gmail.com</p>
+
+        </div>
+        <!-- Main Content Placeholder -->
+        <!-- Footer -->
+        <footer>
+
+            <div id="footer1" class="container-fluid">
+
+                <div class="row ">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-left">
+                        <p style="color:gray">&copy All right Reserved. <a class="footerlinks" href="#" target="_blank">BilBot</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- ./Footer -->
+
+
+
+
+    </form>
+</body>
+</html>
